@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-d8di
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/push-pyxis-jmdg-tenant/appstudio/devfile-sample-python-basic-d8di@sha256:ab1149f99c69845498edea5a81304001b1f73a47af6125dd0a7d2a07e1219038
+        name: container-image
+        resources: {}
+status: {}
